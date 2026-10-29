@@ -1,0 +1,157 @@
+import React, { useEffect, useState } from 'react';
+import { useGameState } from './hooks/useGameState';
+import { useAudio } from './hooks/useAudio';
+import { SplashPage } from './pages/splash/SplashPage';
+import { ArenaPage } from './pages/arena/ArenaPage';
+import { ResultPage } from './pages/result/ResultPage';
+import { PortraitWarning } from './components/PortraitWarning';
+import { ObjectivesModal } from './components/ObjectivesModal';
+
+export default function App() {
+  const {
+    pageView,
+    currentCaseIndex,
+    activeCase,
+    totalCases,
+    selectedAiChoice,
+    showFeedback,
+    answers,
+    score,
+    startInvestigation,
+    selectAiChoice,
+    submitGuess,
+    advanceCase,
+    jumpToCase,
+    restartGame,
+  } = useGameState();
+
+  const { isMuted, toggleMute, startBgm } = useAudio();
+  const [showFullscreenPrompt, setShowFullscreenPrompt] = useState(false);
+  const [showObjectivesModal, setShowObjectivesModal] = useState(false);
+
+  useEffect(() => {
+    const isFullscreenSupported = typeof document !== 'undefined' && !!document.documentElement.requestFullscreen;
+    const isCurrentlyFullscreen = typeof document !== 'undefined' && !!document.fullscreenElement;
+    if (isFullscreenSupported && !isCurrentlyFullscreen) {
+      setShowFullscreenPrompt(true);
+    }
+  }, []);
+
+  const handleStartGame = () => {
+    startBgm();
+    setShowObjectivesModal(true);
+  };
+
+  const handleProceedFromObjectives = () => {
+    setShowObjectivesModal(false);
+    startInvestigation();
+  };
+
+  const enterFullscreen = async () => {
+    try {
+      if (document.documentElement.requestFullscreen) {
+        await document.documentElement.requestFullscreen();
+      }
+    } catch (err) {
+      console.warn("Fullscreen permission denied or not supported by browser", err);
+    }
+    setShowFullscreenPrompt(false);
+  };
+
+  return (
+    <div id="app" className="h-screen w-screen overflow-hidden bg-[#1e2633] flex flex-col antialiased text-white relative">
+      <PortraitWarning />
+
+      {showFullscreenPrompt && (
+        <div id="fullscreen-modal" className="fixed inset-0 z-[9999] card-overlay flex items-center justify-center p-4 select-none animate-fadeIn">
+          <div id="fullscreen-card" className="relative max-w-sm w-full mx-auto card-ui rounded-3xl p-6 sm:p-8 flex flex-col items-center text-center">
+            <div className="relative flex items-center justify-center mb-6">
+              <div className="absolute w-20 h-20 bg-[#FA6E00]/20 rounded-full animate-ping opacity-75" />
+              <div className="w-16 h-16 bg-white border-2 border-[#FA6E00] rounded-2xl flex items-center justify-center text-3xl shadow-ink z-10">
+                📺
+              </div>
+            </div>
+
+            <h3 className="text-lg sm:text-xl font-display font-normal card-title tracking-wide mb-2 uppercase">
+              Mode Layar Penuh
+            </h3>
+            
+            <p className="text-xs sm:text-sm card-text font-sans font-medium leading-relaxed mb-6">
+              Apakah Anda ingin masuk ke mode layar penuh?
+            </p>
+
+            <div className="flex items-center gap-3 w-full font-sans">
+              <button
+                id="fullscreen-yes-button"
+                type="button"
+                onClick={enterFullscreen}
+                className="btn-card flex-1 py-2.5 rounded-xl transition-all active:scale-95 cursor-pointer"
+              >
+                Yes
+              </button>
+              
+              <button
+                id="fullscreen-no-button"
+                type="button"
+                onClick={() => setShowFullscreenPrompt(false)}
+                className="btn-card flex-1 py-2.5 rounded-xl transition-all active:scale-95 cursor-pointer"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {pageView === 'splash' && (
+        <SplashPage
+          onStart={handleStartGame}
+          isMuted={isMuted}
+          onToggleAudio={toggleMute}
+        />
+      )}
+
+      {pageView === 'game' && (
+        <ArenaPage
+          currentCaseIndex={currentCaseIndex}
+          activeCase={activeCase}
+          totalCases={totalCases}
+          selectedAiChoice={selectedAiChoice}
+          showFeedback={showFeedback}
+          onSelectChoice={selectAiChoice}
+          onSubmit={submitGuess}
+          onAdvance={advanceCase}
+          isMuted={isMuted}
+          onToggleAudio={toggleMute}
+          answers={answers}
+          onJumpToCase={jumpToCase}
+          onOpenObjectives={() => setShowObjectivesModal(true)}
+        />
+      )}
+
+      {pageView === 'result' && (
+        <ResultPage
+          score={score}
+          answers={answers}
+          onRestart={restartGame}
+          isMuted={isMuted}
+          onToggleAudio={toggleMute}
+        />
+      )}
+
+      {/* Modal Tujuan Pembelajaran / Simulasi */}
+      <ObjectivesModal
+        isOpen={showObjectivesModal}
+        onClose={() => setShowObjectivesModal(false)}
+        onStart={handleProceedFromObjectives}
+      />
+
+      {/* Footer Copyright: Hanya tampil di halaman tanpa kontrol (Splash & Result) */}
+      {pageView !== 'game' && (
+        <footer className="fixed bottom-1.5 left-0 right-0 z-40 text-center pointer-events-none select-none text-[10px] sm:text-xs text-[#FA6E00] font-display font-bold tracking-wider">
+          Copyright 2026 Pusat Perbukuan
+        </footer>
+      )}
+    </div>
+  );
+}
