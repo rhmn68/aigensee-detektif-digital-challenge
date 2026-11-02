@@ -6,6 +6,7 @@ import { ArenaPage } from './pages/arena/ArenaPage';
 import { ResultPage } from './pages/result/ResultPage';
 import { PortraitWarning } from './components/PortraitWarning';
 import { ObjectivesModal } from './components/ObjectivesModal';
+import { TutorialModal } from './components/TutorialModal';
 
 export default function App() {
   const {
@@ -25,9 +26,10 @@ export default function App() {
     restartGame,
   } = useGameState();
 
-  const { isMuted, toggleMute, startBgm } = useAudio();
+  const { isMuted, toggleMute, startBgm, stopBgm } = useAudio();
   const [showFullscreenPrompt, setShowFullscreenPrompt] = useState(false);
   const [showObjectivesModal, setShowObjectivesModal] = useState(false);
+  const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
     const isFullscreenSupported = typeof document !== 'undefined' && !!document.documentElement.requestFullscreen;
@@ -44,6 +46,13 @@ export default function App() {
 
   const handleProceedFromObjectives = () => {
     setShowObjectivesModal(false);
+    stopBgm();
+    setShowTutorial(true);
+  };
+
+  const handleProceedFromTutorial = () => {
+    setShowTutorial(false);
+    startBgm();
     startInvestigation();
   };
 
@@ -145,6 +154,7 @@ export default function App() {
         onClose={() => setShowObjectivesModal(false)}
         onStart={handleProceedFromObjectives}
       />
+      {showTutorial && <TutorialModal onContinue={handleProceedFromTutorial} />}
 
       {/* Footer Copyright: Hanya tampil di halaman tanpa kontrol (Splash & Result) */}
       {pageView !== 'game' && (
