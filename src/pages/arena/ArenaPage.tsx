@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { XCircle, Lightbulb, HelpCircle, ArrowRight, X, ChevronUp, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { XCircle, Lightbulb, HelpCircle, ArrowRight, X, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Trophy } from 'lucide-react';
 import { Case, UserAnswer } from '../../types';
 import { CASES_DATA } from '../../data/questions';
 import { MagnifiedImage } from '../../components/MagnifiedImage';
@@ -394,8 +394,8 @@ export function ArenaPage({
 
               <div className="overflow-y-auto min-h-0 flex-1 pr-1">
                 {isCorrect ? (
-                  <div className="mx-auto mt-2 md:mt-3 shrink-0 text-4xl sm:text-5xl leading-none animate-bounce">
-                    🏆
+                  <div className="mx-auto mt-2 md:mt-3 shrink-0 text-[#FA6E00] flex justify-center animate-bounce">
+                    <Trophy className="w-10 h-10 sm:w-12 sm:h-12" aria-hidden="true" />
                   </div>
                 ) : (
                   <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3 shrink-0 border-2 border-[#FA6E00] bg-[#38455B]/10">

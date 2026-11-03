@@ -4,7 +4,7 @@ Proyek **Detektif Digital Challenge** menggunakan musik latar belakang (backsoun
 
 ---
 
-## 🎵 Informasi Lagu
+## <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18V5l12-2v13M9 9l12-2"/><ellipse cx="6" cy="18" rx="3" ry="3"/><ellipse cx="18" cy="16" rx="3" ry="3"/></svg> Informasi Lagu
 
 - **File Path**: `assets/audio/bgm.mp3`
 - **Judul Asli**: Unsolved Investigation
@@ -16,7 +16,7 @@ Proyek **Detektif Digital Challenge** menggunakan musik latar belakang (backsoun
 
 ---
 
-## 📜 Ketentuan Lisensi
+## <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></svg> Ketentuan Lisensi
 
 **Lisensi**: [Creative Commons Zero (CC0 1.0 Universal) - Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 

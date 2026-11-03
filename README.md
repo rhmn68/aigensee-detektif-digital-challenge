@@ -2,7 +2,7 @@
 
 **Detektif Digital** adalah game simulasi interaktif edukatif yang menantang pemain untuk membedakan antara foto asli jepretan kamera manusia dan citra hasil rekayasa Kecerdasan Artifisial (KA / AI). Game ini dirancang menggunakan teknologi web modern untuk memberikan pengalaman penyelidikan digital yang imersif.
 
-## 🚀 Fitur Utama
+## <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 7 9h-4v9H9v-9H5z"/></svg> Fitur Utama
 
 1. **10 Kasus Investigasi**: Menampilkan 10 pasang gambar dari berbagai kategori (potret wajah, detail jari tangan, hewan, pemandangan kota, kacamata reflektif, dll.).
 2. **Kaca Pembesar Interaktif**: Arahkan kursor atau sentuh gambar untuk menggunakan kaca pembesar dengan zoom 2.5x guna memindai distorsi piksel halus secara detail.
@@ -11,7 +11,7 @@
 5. **Evaluasi Akurasi & Pangkat**: Penilaian skor akhir beserta pemberian pangkat kepangkatan detektif (mulai dari Detektif Amatir hingga Detektif Legendaris) dan lembar review ringkasan kasus.
 6. **Desain Cyberpunk Modern**: Antarmuka gelap bertema agensi detektif digital futuristik dengan efek pendaran neon, kisi siber bergerak, dan audio synthesizer internal berbasis Web Audio API.
 
-## 🛠️ Tech Stack
+## <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m8 8-5 4 5 4m8-8 5 4-5 4M14 4l-4 16"/></svg> Tech Stack
 
 - **Framework**: React 19 (TypeScript)
 - **Bundler**: Vite 6
@@ -19,7 +19,7 @@
 - **Ikon**: Lucide React
 - **Audio**: Web Audio API Synthesizer (Tanpa file eksternal)
 
-## 📁 Struktur Proyek
+## <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7V4h6l2 3h10v13H3z"/></svg> Struktur Proyek
 
 ```text
 detektif-digital-challenge/
@@ -51,7 +51,7 @@ detektif-digital-challenge/
 └── README.md                    # Dokumentasi proyek
 ```
 
-## ⚙️ Cara Menjalankan Project
+## <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 10 7-10 7z"/></svg> Cara Menjalankan Project
 
 ### Prerequisites
 - **Node.js** 18+ (disarankan LTS)
@@ -88,5 +88,5 @@ npm run preview
 Lalu buka URL yang muncul di terminal, biasanya:
 **http://localhost:4173/detektif-digital-challenge/**
 
-### ⚠️ Jangan buka `dist/index.html` dengan drag-and-drop ke browser
+### <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 10 18H2zM12 9v5m0 3v1"/></svg> Jangan buka `dist/index.html` dengan drag-and-drop ke browser
 Membuka file lewat protokol `file://` akan gagal (CORS / asset tidak termuat). Selalu sajikan `dist/` lewat HTTP, misalnya `npm run preview`, atau deploy ke hosting web.

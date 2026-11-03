@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RotateCcw, Check, X, BookOpen } from 'lucide-react';
+import { RotateCcw, Check, X, BookOpen, Trophy } from 'lucide-react';
 import { UserAnswer } from '../../types';
 import { CASES_DATA } from '../../data/questions';
 import { AudioToggle } from '../../components/AudioToggle';
@@ -41,8 +41,8 @@ export function ResultPage({ score, answers, onRestart, isMuted, onToggleAudio }
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#FA7500]/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div id="result-content" className="z-10 max-w-md w-full flex flex-col items-center select-none animate-fadeIn">
-        <div id="result-award-icon" className="text-3xl sm:text-5xl leading-none mb-1 sm:mb-2 animate-bounce">
-          🏆
+        <div id="result-award-icon" className="text-[#FA6E00] mb-1 sm:mb-2 animate-bounce">
+          <Trophy className="w-8 h-8 sm:w-12 sm:h-12" aria-hidden="true" />
         </div>
 
         <h2 id="result-title" className="text-sm sm:text-xl md:text-2xl font-display text-[#FA6E00] mb-2 sm:mb-4 text-center shrink-0">

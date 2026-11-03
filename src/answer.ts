@@ -2,8 +2,8 @@
  * Detektif Digital Challenge - Kunci Jawaban Lengkap (Case 1 - 10)
  * Membedakan Foto Asli vs Gambar Rekayasa AI (Kecerdasan Artifisial)
  * 
- * 🌐 Live URL Demo: https://glenrioariesto.github.io/detektif-digital-challenge/
- * 📂 Repository: https://github.com/glenrioariesto/detektif-digital-challenge
+ * Live URL Demo: https://glenrioariesto.github.io/detektif-digital-challenge/
+ * Repository: https://github.com/glenrioariesto/detektif-digital-challenge
  */
 
 export interface DigitalDetectiveAnswer {
