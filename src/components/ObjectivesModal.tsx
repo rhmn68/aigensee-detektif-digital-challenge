@@ -121,7 +121,7 @@ export function ObjectivesModal({ isOpen, onClose, onStart }: ObjectivesModalPro
             {slide.icon}
           </div>
           <div className="min-w-0 pr-6">
-            <h3 className="text-xs sm:text-base md:text-lg font-display text-[#FA6E00] tracking-wider truncate">
+            <h3 className="text-xs sm:text-base md:text-lg font-display font-bold text-[#FA6E00] tracking-wider truncate">
               {slide.title}
             </h3>
             <p className="text-[9px] sm:text-xs font-mono card-muted tracking-wide truncate">

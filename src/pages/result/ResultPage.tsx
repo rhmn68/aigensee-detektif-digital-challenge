@@ -45,7 +45,7 @@ export function ResultPage({ score, answers, onRestart, isMuted, onToggleAudio }
           <Trophy className="w-8 h-8 sm:w-12 sm:h-12" aria-hidden="true" />
         </div>
 
-        <h2 id="result-title" className="text-sm sm:text-xl md:text-2xl font-display text-[#FA6E00] mb-2 sm:mb-4 text-center shrink-0">
+        <h2 id="result-title" className="text-sm sm:text-xl md:text-2xl font-display font-bold text-[#FA6E00] mb-2 sm:mb-4 text-center shrink-0">
           Laporan Hasil Penyelidikan
         </h2>
 

@@ -19,7 +19,7 @@ export function TutorialModal({ onContinue }: TutorialModalProps) {
         aria-labelledby="tutorial-title"
         className="card-ui rounded-3xl p-4 sm:p-6 w-full max-w-3xl max-h-[94dvh] overflow-y-auto border-2 border-[#FA6E00]/40 shadow-2xl"
       >
-        <h2 id="tutorial-title" className="font-display text-lg sm:text-xl text-[#FA6E00] tracking-wide">
+        <h2 id="tutorial-title" className="font-display font-bold text-lg sm:text-xl text-[#FA6E00] tracking-wide">
           Video Tutorial Investigasi
         </h2>
         <p className="card-text text-xs sm:text-sm mt-1 mb-4">

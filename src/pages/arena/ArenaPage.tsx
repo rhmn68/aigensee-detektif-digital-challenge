@@ -257,7 +257,7 @@ export function ArenaPage({
             
             {/* Center Area: Non-Truncated Question Text */}
             <div id="arena-question" className="text-center flex-1 px-2 sm:px-4 min-w-0">
-              <p className="text-[10px] sm:text-xs md:text-sm font-display text-[#FA6E00] tracking-wider leading-tight">
+              <p className="text-[10px] sm:text-xs md:text-sm font-display font-bold text-[#FA6E00] tracking-wider leading-tight">
                 Manakah Gambar KA?
               </p>
               <p className="text-[9px] sm:text-[11px] md:text-xs card-muted font-mono mt-0.5 leading-tight">
@@ -403,7 +403,7 @@ export function ArenaPage({
                   </div>
                 )}
 
-                <h3 className={`text-xs sm:text-sm font-display tracking-widest mb-0.5 sm:mb-1 shrink-0 ${
+                <h3 className={`text-xs sm:text-sm font-display font-bold tracking-widest mb-0.5 sm:mb-1 shrink-0 ${
                   isCorrect ? 'text-[#FA6E00]' : 'text-[#38455B]'
                 }`}>
                   {isCorrect ? 'Analisis Benar!' : 'Analisis Keliru!'}
