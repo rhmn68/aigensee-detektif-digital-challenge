@@ -144,7 +144,7 @@ export function MagnifiedImage({
           ? 'border-[#FA6E00] bg-[#FA6E00] text-white'
           : 'bg-white border-[#FA6E00] text-[#FA6E00]'
       }`}>
-        <span className="text-[8px] sm:text-[10px] md:text-xs uppercase tracking-wider">Gambar</span>
+        <span className="text-[8px] sm:text-[10px] md:text-xs tracking-wider">Gambar</span>
         <span className="text-[9px] sm:text-xs md:text-sm font-black">{label}</span>
       </div>
 

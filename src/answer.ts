@@ -26,7 +26,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'B',
     aiImage: 'A',
     locationOfArtifacts: 'Tulisan Pot, Tekstur Tanah & Kilap Daun',
-    explanation: 'Gambar A adalah HASIL KA. Pot hitam tampak terlalu mulus sempurna tanpa tulisan penanda, kilap permukaan daun terlalu seragam, dan efek blur latar belakang tampak sintetis. Gambar B adalah FOTO ASLI tanaman hias Aglaonema dalam pot plastik hitam dengan tulisan cat putih "kel 8 IX".'
+    explanation: 'Gambar A adalah hasil KA. Pot hitam tampak terlalu mulus sempurna tanpa tulisan penanda, kilap permukaan daun terlalu seragam, dan efek blur latar belakang tampak sintetis. Gambar B adalah foto asli tanaman hias Aglaonema dalam pot plastik hitam dengan tulisan cat putih "kel 8 IX".'
   },
   {
     caseId: 2,
@@ -36,7 +36,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'A',
     aiImage: 'B',
     locationOfArtifacts: 'Teks Bungkus Jajanan, Cobek & Capitan',
-    explanation: 'Gambar B adalah HASIL KA. Tulisan merek pada bungkus jajanan di keranjang hijau mengalami distorsi huruf acak (gibberish) yang tidak terbaca, ditambah kemunculan objek mirip cobek yang tidak wajar di atas etalase. Gambar A adalah FOTO ASLI dengan teks kemasan "Garuda Pilus" dan "Brownies Crispy" yang terbaca jelas.'
+    explanation: 'Gambar B adalah hasil KA. Tulisan merek pada bungkus jajanan di keranjang hijau mengalami distorsi huruf acak (gibberish) yang tidak terbaca, ditambah kemunculan objek mirip cobek yang tidak wajar di atas etalase. Gambar A adalah foto asli dengan teks kemasan "Garuda Pilus" dan "Brownies Crispy" yang terbaca jelas.'
   },
   {
     caseId: 3,
@@ -46,7 +46,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'B',
     aiImage: 'A',
     locationOfArtifacts: 'Bordir Kebaya, Konde Rambut & Latar Dinding',
-    explanation: 'Gambar A adalah HASIL KA. Potret wanita berkebaya ungu dengan bordir emas dan wallpaper bunga terlihat seperti rekonstruksi digital: kulit mulus, latar terlalu dekoratif, dan detail tradisional terlalu "sempurna". Gambar B adalah FOTO ASLI arsip sejarah.'
+    explanation: 'Gambar A adalah hasil KA. Potret wanita berkebaya ungu dengan bordir emas dan wallpaper bunga terlihat seperti rekonstruksi digital: kulit mulus, latar terlalu dekoratif, dan detail tradisional terlalu "sempurna". Gambar B adalah foto asli arsip sejarah.'
   },
   {
     caseId: 4,
@@ -56,7 +56,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'A',
     aiImage: 'B',
     locationOfArtifacts: 'Tekstur Bulu, Bantalan Kaki & Sinar Matahari',
-    explanation: 'Gambar B adalah HASIL KA. Anak kucing putih tampil dengan pencahayaan keemasan yang terlalu sinematik, tekstur bulu sehalus kapas digital, dan pose mengulurkan kaki depan ke kamera yang tampak dibuat-buat. Gambar A adalah FOTO ASLI kucing putih yang menyandarkan dagu di kaki kursi kayu sambil menggigit selang plastik bening.'
+    explanation: 'Gambar B adalah hasil KA. Anak kucing putih tampil dengan pencahayaan keemasan yang terlalu sinematik, tekstur bulu sehalus kapas digital, dan pose mengulurkan kaki depan ke kamera yang tampak dibuat-buat. Gambar A adalah foto asli kucing putih yang menyandarkan dagu di kaki kursi kayu sambil menggigit selang plastik bening.'
   },
   {
     caseId: 5,
@@ -66,7 +66,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'B',
     aiImage: 'A',
     locationOfArtifacts: 'Sambungan Kabel, Isolator & Kotak Panel',
-    explanation: 'Gambar A adalah HASIL KA. Konstruksi tiang listrik tidak logis: terdapat dua kotak panel bersih yang berdampingan secara janggal, lampu jalan yang menempel aneh, serta untaian kabel dan isolator yang tidak mengikuti fungsi kelistrikan nyata. Gambar B adalah FOTO ASLI tiang listrik beton dengan kotak panel berkarat dan lilitan ijuk hitam.'
+    explanation: 'Gambar A adalah hasil KA. Konstruksi tiang listrik tidak logis: terdapat dua kotak panel bersih yang berdampingan secara janggal, lampu jalan yang menempel aneh, serta untaian kabel dan isolator yang tidak mengikuti fungsi kelistrikan nyata. Gambar B adalah foto asli tiang listrik beton dengan kotak panel berkarat dan lilitan ijuk hitam.'
   },
   {
     caseId: 6,
@@ -76,7 +76,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'A',
     aiImage: 'B',
     locationOfArtifacts: 'Jari Tangan Pedagang, Kipas Bambu & Barisan Sate',
-    explanation: 'Gambar B adalah HASIL KA. Jari-jari tangan pedagang yang menggenggam kipas anyaman bambu tampak meleleh dan menyatu secara tidak wajar, disertai pencahayaan bara api dan bokeh malam yang terlalu sinematik. Gambar A adalah FOTO ASLI sate ayam yang sedang dibakar di atas pemanggang arang besi.'
+    explanation: 'Gambar B adalah hasil KA. Jari-jari tangan pedagang yang menggenggam kipas anyaman bambu tampak meleleh dan menyatu secara tidak wajar, disertai pencahayaan bara api dan bokeh malam yang terlalu sinematik. Gambar A adalah foto asli sate ayam yang sedang dibakar di atas pemanggang arang besi.'
   },
   {
     caseId: 7,
@@ -86,7 +86,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'B',
     aiImage: 'A',
     locationOfArtifacts: 'Tangan Pemegang Kipas, Nampan Daun Pisang & Kilap Lauk',
-    explanation: 'Gambar A adalah HASIL KA. Seluruh nampan stainless beralas daun pisang tertata terlalu simetris dengan kilau makanan yang artifisial, serta jari tangan pedagang yang memegang kipas di belakang bara api mengalami distorsi anatomi. Gambar B adalah FOTO ASLI prasmanan warung makan nyata dengan nampan plastik merah dan capitan.'
+    explanation: 'Gambar A adalah hasil KA. Seluruh nampan stainless beralas daun pisang tertata terlalu simetris dengan kilau makanan yang artifisial, serta jari tangan pedagang yang memegang kipas di belakang bara api mengalami distorsi anatomi. Gambar B adalah foto asli prasmanan warung makan nyata dengan nampan plastik merah dan capitan.'
   },
   {
     caseId: 8,
@@ -96,7 +96,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'A',
     aiImage: 'B',
     locationOfArtifacts: 'Pori-Pori Telur, Kobaran Api & Sudut Spatula',
-    explanation: 'Gambar B adalah HASIL KA. Telur dadar memiliki tekstur berlubang-lubang seragam seperti spons dengan posisi spatula kayu yang janggal, serta kobaran api kompor yang terlalu besar dan sinematik. Gambar A adalah FOTO ASLI telur dadar yang sedang digoreng di dalam wajan dengan pinggiran krispi alami.'
+    explanation: 'Gambar B adalah hasil KA. Telur dadar memiliki tekstur berlubang-lubang seragam seperti spons dengan posisi spatula kayu yang janggal, serta kobaran api kompor yang terlalu besar dan sinematik. Gambar A adalah foto asli telur dadar yang sedang digoreng di dalam wajan dengan pinggiran krispi alami.'
   },
   {
     caseId: 9,
@@ -106,7 +106,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'B',
     aiImage: 'A',
     locationOfArtifacts: 'Gulungan Selang Biru, Lampu Gantung & Kabel Jalan',
-    explanation: 'Gambar A adalah HASIL KA. Merupakan hasil olahan AI yang membuat selang biru melingkar kaku tanpa ujung keran yang jelas serta lampu teras menyala di siang bolong. Gambar B adalah FOTO ASLI teras rumah nyata dengan selang air biru yang tergeletak alami di lantai.'
+    explanation: 'Gambar A adalah hasil KA. Merupakan hasil olahan AI yang membuat selang biru melingkar kaku tanpa ujung keran yang jelas serta lampu teras menyala di siang bolong. Gambar B adalah foto asli teras rumah nyata dengan selang air biru yang tergeletak alami di lantai.'
   },
   {
     caseId: 10,
@@ -116,7 +116,7 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
     realImage: 'A',
     aiImage: 'B',
     locationOfArtifacts: 'Lukisan Kembar, Peralatan Lukis & Cahaya Jendela',
-    explanation: 'Gambar B adalah HASIL KA. Studio lukis tampak terlalu ideal dengan pencahayaan sempurna, serta terdapat anomali duplikasi khas AI di mana lukisan pemandangan danau di atas meja tampak kembar dengan lukisan yang tergantung di dinding. Gambar A adalah FOTO ASLI tumpukan bingkai di bengkel pigura nyata.'
+    explanation: 'Gambar B adalah hasil KA. Studio lukis tampak terlalu ideal dengan pencahayaan sempurna, serta terdapat anomali duplikasi khas AI di mana lukisan pemandangan danau di atas meja tampak kembar dengan lukisan yang tergantung di dinding. Gambar A adalah foto asli tumpukan bingkai di bengkel pigura nyata.'
   }
 ];
 

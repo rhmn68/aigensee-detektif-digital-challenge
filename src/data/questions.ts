@@ -37,7 +37,7 @@ export const CASES_DATA: Case[] = [
       "Perhatikan permukaan daun dan pencahayaan di Gambar A. Apakah kilap daunnya tampak terlalu licin dan merata seperti render digital?",
       "Bandingkan tekstur tanah di dalam pot serta nat keramik lantai di Gambar B yang memiliki ketidaksempurnaan alami."
     ],
-    explanation: "Gambar A adalah HASIL KA. Pot hitam tampak terlalu mulus sempurna tanpa tulisan penanda, kilap permukaan daun terlalu seragam, dan efek blur latar belakang tampak sintetis. Gambar B adalah FOTO ASLI. Menampilkan tanaman hias Aglaonema dalam pot plastik hitam dengan tulisan cat putih 'kel 8 IX', tekstur tanah yang alami, serta ubin lantai nyata."
+    explanation: "Gambar A adalah hasil KA. Pot hitam tampak terlalu mulus sempurna tanpa tulisan penanda, kilap permukaan daun terlalu seragam, dan efek blur latar belakang tampak sintetis. Gambar B adalah foto asli. Menampilkan tanaman hias Aglaonema dalam pot plastik hitam dengan tulisan cat putih 'kel 8 IX', tekstur tanah yang alami, serta ubin lantai nyata."
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ export const CASES_DATA: Case[] = [
       "Perhatikan benda di sebelah keranjang hijau pada Gambar B. Apakah wajar ada cobek di atas etalase kaca dengan bentuk yang tampak melebur?",
       "Bandingkan dengan Gambar A. Apakah tulisan merek 'Garuda Pilus' dan 'Brownies Crispy' terbaca jelas, lengkap dengan toples kerupuk dan capitan besi?"
     ],
-    explanation: "Gambar B adalah HASIL KA. Tulisan merek pada bungkus jajanan di keranjang hijau mengalami distorsi huruf acak (gibberish) yang tidak terbaca, ditambah kemunculan objek mirip cobek yang tidak wajar di atas etalase. Gambar A adalah FOTO ASLI. Teks kemasan 'Garuda Pilus' dan 'Brownies Crispy' terbaca tajam di atas taplak kotak-kotak hijau bersama toples kerupuk dan capitan."
+    explanation: "Gambar B adalah hasil KA. Tulisan merek pada bungkus jajanan di keranjang hijau mengalami distorsi huruf acak (gibberish) yang tidak terbaca, ditambah kemunculan objek mirip cobek yang tidak wajar di atas etalase. Gambar A adalah foto asli. Teks kemasan 'Garuda Pilus' dan 'Brownies Crispy' terbaca tajam di atas taplak kotak-kotak hijau bersama toples kerupuk dan capitan."
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ export const CASES_DATA: Case[] = [
       "Periksa bordir emas di kebaya dan bunga melati di konde rambut Gambar A. Apakah motifnya terlalu simetris atau tampak 'melukis', bukan tekstil sungguhan?",
       "Lihat Gambar B. Apakah foto hitam-putih sepia ini punya grain kamera kuno, kebaya putih sederhana, dan latar polos yang konsisten dengan arsip sejarah?"
     ],
-    explanation: "Gambar A adalah HASIL KA. Potret wanita berkebaya ungu dengan bordir emas dan wallpaper bunga terlihat seperti rekonstruksi digital: kulit mulus, latar terlalu dekoratif, dan detail tradisional terlalu 'sempurna'. Gambar B adalah FOTO ASLI. Foto sejarah Kartini hitam-putih menampilkan kebaya putih, konde rambut, kalung, dan grain fotografi kuno yang otentik."
+    explanation: "Gambar A adalah hasil KA. Potret wanita berkebaya ungu dengan bordir emas dan wallpaper bunga terlihat seperti rekonstruksi digital: kulit mulus, latar terlalu dekoratif, dan detail tradisional terlalu 'sempurna'. Gambar B adalah foto asli. Foto sejarah Kartini hitam-putih menampilkan kebaya putih, konde rambut, kalung, dan grain fotografi kuno yang otentik."
   },
   {
     id: 4,
@@ -88,7 +88,7 @@ export const CASES_DATA: Case[] = [
       "Lihat pose kaki depan kucing yang terangkat ke arah kamera di Gambar B. Apakah bantalan kaki merah mudanya tampak seperti lukisan digital?",
       "Bandingkan dengan Gambar A. Apakah terlihat momen alami kucing putih yang sedang menyandarkan dagu di kaki kursi kayu sambil menggigit selang plastik bening?"
     ],
-    explanation: "Gambar B adalah HASIL KA. Anak kucing putih tampil dengan pencahayaan keemasan yang terlalu sinematik, tekstur bulu sehalus kapas digital, dan pose mengulurkan kaki depan ke kamera yang tampak dibuat-buat. Gambar A adalah FOTO ASLI. Kucing putih terekam secara candid dari sudut atas sedang menyandarkan kepala di palang kursi kayu sambil bermain menggigit selang plastik bening."
+    explanation: "Gambar B adalah hasil KA. Anak kucing putih tampil dengan pencahayaan keemasan yang terlalu sinematik, tekstur bulu sehalus kapas digital, dan pose mengulurkan kaki depan ke kamera yang tampak dibuat-buat. Gambar A adalah foto asli. Kucing putih terekam secara candid dari sudut atas sedang menyandarkan kepala di palang kursi kayu sambil bermain menggigit selang plastik bening."
   },
   {
     id: 5,
@@ -105,7 +105,7 @@ export const CASES_DATA: Case[] = [
       "Periksa dua kotak panel berdampingan (hitam dan putih) serta lampu jalan di Gambar A. Apakah penataannya lazim ditemukan pada tiang beton biasa?",
       "Bandingkan dengan Gambar B. Apakah tampak kotak panel besi tua berkarat dengan tiga bulatan oranye dan lilitan ijuk hitam penghalang panjat yang nyata?"
     ],
-    explanation: "Gambar A adalah HASIL KA. Konstruksi tiang listrik tidak logis: terdapat dua kotak panel bersih yang berdampingan secara janggal, lampu jalan yang menempel aneh, serta untaian kabel dan isolator yang tidak mengikuti fungsi kelistrikan nyata. Gambar B adalah FOTO ASLI. Menampilkan tiang listrik beton sungguhan dengan kotak panel berkarat, lilitan ijuk hitam, dan kabel semrawut berlatar langit mendung."
+    explanation: "Gambar A adalah hasil KA. Konstruksi tiang listrik tidak logis: terdapat dua kotak panel bersih yang berdampingan secara janggal, lampu jalan yang menempel aneh, serta untaian kabel dan isolator yang tidak mengikuti fungsi kelistrikan nyata. Gambar B adalah foto asli. Menampilkan tiang listrik beton sungguhan dengan kotak panel berkarat, lilitan ijuk hitam, dan kabel semrawut berlatar langit mendung."
   },
   {
     id: 6,
@@ -122,7 +122,7 @@ export const CASES_DATA: Case[] = [
       "Perhatikan susunan tusuk sate dan nyala bara api di Gambar B. Apakah sate berjajar terlalu rapi dalam satu baris dengan efek bokeh lampu jalan yang berlebihan?",
       "Bandingkan dengan Gambar A. Apakah tampak panggangan besi panjang di tepi jalan dengan tusuk sate yang menyebar alami dan kepulan asap bakaran nyata?"
     ],
-    explanation: "Gambar B adalah HASIL KA. Jari-jari tangan pedagang yang menggenggam kipas anyaman bambu tampak meleleh dan menyatu secara tidak wajar, disertai pencahayaan bara api dan bokeh malam yang terlalu sinematik. Gambar A adalah FOTO ASLI. Diambil dari sudut atas, menampilkan tusukan sate ayam yang sedang dibakar di atas pemanggang arang besi di pinggir jalan dengan asap dan tekstur daging yang autentik."
+    explanation: "Gambar B adalah hasil KA. Jari-jari tangan pedagang yang menggenggam kipas anyaman bambu tampak meleleh dan menyatu secara tidak wajar, disertai pencahayaan bara api dan bokeh malam yang terlalu sinematik. Gambar A adalah foto asli. Diambil dari sudut atas, menampilkan tusukan sate ayam yang sedang dibakar di atas pemanggang arang besi di pinggir jalan dengan asap dan tekstur daging yang autentik."
   },
   {
     id: 7,
@@ -139,7 +139,7 @@ export const CASES_DATA: Case[] = [
       "Lihat deretan nampan lauk di Gambar A. Apakah semua nampan beralas daun pisang tampak terlalu rapi, seragam, dan berkilap seperti dilapisi pernis?",
       "Bandingkan dengan Gambar B. Apakah terlihat suasana warung sungguhan dengan nampan plastik merah, capitan besi, rak hijau berisi lalapan, serta susunan sate usus dan sosis yang alami?"
     ],
-    explanation: "Gambar A adalah HASIL KA. Seluruh nampan stainless beralas daun pisang tertata terlalu simetris dengan kilau makanan yang artifisial, serta jari tangan pedagang yang memegang kipas di belakang bara api mengalami distorsi anatomi. Gambar B adalah FOTO ASLI. Menampilkan prasmanan warung makan nyata lengkap dengan nampan plastik merah, capitan, rak lalapan hijau, tahu kuning, ayam ungkep, ikan, serta sate usus dan sosis."
+    explanation: "Gambar A adalah hasil KA. Seluruh nampan stainless beralas daun pisang tertata terlalu simetris dengan kilau makanan yang artifisial, serta jari tangan pedagang yang memegang kipas di belakang bara api mengalami distorsi anatomi. Gambar B adalah foto asli. Menampilkan prasmanan warung makan nyata lengkap dengan nampan plastik merah, capitan, rak lalapan hijau, tahu kuning, ayam ungkep, ikan, serta sate usus dan sosis."
   },
   {
     id: 8,
@@ -156,7 +156,7 @@ export const CASES_DATA: Case[] = [
       "Lihat kobaran api oranye dan biru di bawah wajan Gambar B. Apakah nyala api sebesar itu wajar untuk menggoreng telur di dapur rumah?",
       "Bandingkan dengan Gambar A. Apakah tepian telur yang garing berenda, gelembung minyak goreng, dan tungku kompor gas terlihat seperti proses memasak sungguhan?"
     ],
-    explanation: "Gambar B adalah HASIL KA. Telur dadar memiliki tekstur berlubang-lubang seragam seperti spons dengan posisi spatula kayu yang janggal, serta kobaran api kompor yang terlalu besar dan sinematik. Gambar A adalah FOTO ASLI. Menampilkan telur dadar yang sedang digoreng di dalam wajan cekung dengan pinggiran krispi alami, gelembung minyak panas, dan spatula kayu."
+    explanation: "Gambar B adalah hasil KA. Telur dadar memiliki tekstur berlubang-lubang seragam seperti spons dengan posisi spatula kayu yang janggal, serta kobaran api kompor yang terlalu besar dan sinematik. Gambar A adalah foto asli. Menampilkan telur dadar yang sedang digoreng di dalam wajan cekung dengan pinggiran krispi alami, gelembung minyak panas, dan spatula kayu."
   },
   {
     id: 9,
@@ -173,7 +173,7 @@ export const CASES_DATA: Case[] = [
       "Perhatikan lampu gantung di plafon teras dan lampu dinding di Gambar A. Mengapa semua lampu berpendar kuning hangat padahal matahari siang sedang bersinar terik?",
       "Bandingkan dengan Gambar B. Apakah selang biru menjuntai alami di lantai keramik dari keran kecil, dengan latar warung tetangga yang nyata di seberang jalan?"
     ],
-    explanation: "Gambar A adalah HASIL KA. Merupakan hasil olahan AI yang menambahkan pintu kayu, tanaman hias, dan bayangan dramatis, namun membuat selang biru melingkar kaku tanpa ujung keran yang jelas serta lampu teras menyala di siang bolong. Gambar B adalah FOTO ASLI. Menampilkan teras rumah nyata dengan selang air biru yang tergeletak alami di lantai, pagar lipat besi abu-abu, dan pemandangan jalan lingkungan warga."
+    explanation: "Gambar A adalah hasil KA. Merupakan hasil olahan AI yang menambahkan pintu kayu, tanaman hias, dan bayangan dramatis, namun membuat selang biru melingkar kaku tanpa ujung keran yang jelas serta lampu teras menyala di siang bolong. Gambar B adalah foto asli. Menampilkan teras rumah nyata dengan selang air biru yang tergeletak alami di lantai, pagar lipat besi abu-abu, dan pemandangan jalan lingkungan warga."
   },
   {
     id: 10,
@@ -190,6 +190,6 @@ export const CASES_DATA: Case[] = [
       "Perhatikan penataan kuas, botol cat, dan lampu meja yang menyala di siang hari pada Gambar B. Apakah suasananya terasa terlalu mulus dan ideal seperti ilustrasi katalog?",
       "Lihat Gambar A. Apakah tumpukan bingkai kosong berbagai ukuran, pantulan kaca, dan gelas kopi di atas meja menunjukkan suasana bengkel pigura sungguhan?"
     ],
-    explanation: "Gambar B adalah HASIL KA. Studio lukis tampak terlalu ideal dengan pencahayaan sempurna, serta terdapat anomali duplikasi khas AI di mana lukisan pemandangan danau di atas meja tampak kembar dengan lukisan yang tergantung di dinding. Gambar A adalah FOTO ASLI. Menampilkan tumpukan berbagai bingkai foto dan kaca di bengkel pigura nyata, lengkap dengan cangkir bertutup di atas meja dan pekerja di sisi kanan."
+    explanation: "Gambar B adalah hasil KA. Studio lukis tampak terlalu ideal dengan pencahayaan sempurna, serta terdapat anomali duplikasi khas AI di mana lukisan pemandangan danau di atas meja tampak kembar dengan lukisan yang tergantung di dinding. Gambar A adalah foto asli. Menampilkan tumpukan berbagai bingkai foto dan kaca di bengkel pigura nyata, lengkap dengan cangkir bertutup di atas meja dan pekerja di sisi kanan."
   }
 ];

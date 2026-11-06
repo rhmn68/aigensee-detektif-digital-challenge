@@ -154,7 +154,7 @@ export function ArenaPage({
               alt=""
               className="w-full h-auto object-contain drop-shadow-[0_6px_14px_rgba(56,69,91,0.4)]"
             />
-            <span className="absolute inset-0 flex items-center justify-center font-display text-white text-[9px] mt-0.5 sm:mt-1 sm:text-xs md:text-sm xl:text-2xl tracking-wide uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]">
+            <span className="absolute inset-0 flex items-center justify-center font-display text-white text-[9px] mt-0.5 sm:mt-1 sm:text-xs md:text-sm xl:text-2xl tracking-wide drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]">
               Kasus {currentCaseIndex + 1}
             </span>
           </div>
@@ -257,8 +257,8 @@ export function ArenaPage({
             
             {/* Center Area: Non-Truncated Question Text */}
             <div id="arena-question" className="text-center flex-1 px-2 sm:px-4 min-w-0">
-              <p className="text-[10px] sm:text-xs md:text-sm font-display text-[#FA6E00] uppercase tracking-wider leading-tight">
-                Manakah GAMBAR KA?
+              <p className="text-[10px] sm:text-xs md:text-sm font-display text-[#FA6E00] tracking-wider leading-tight">
+                Manakah Gambar KA?
               </p>
               <p className="text-[9px] sm:text-[11px] md:text-xs card-muted font-mono mt-0.5 leading-tight">
                 {activeCase.title}
@@ -285,7 +285,7 @@ export function ArenaPage({
                   alt=""
                   className="w-full h-auto object-contain drop-shadow-[0_6px_12px_rgba(56,69,91,0.35)]"
                 />
-                <span className="absolute inset-0 flex items-center justify-center font-display text-white text-[8px] sm:text-[10px] md:text-xs tracking-wide uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] whitespace-nowrap">
+                <span className="absolute inset-0 flex items-center justify-center font-display text-white text-[8px] sm:text-[10px] md:text-xs tracking-wide drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] whitespace-nowrap">
                   {isFeedbackDismissed ? 'Lihat Hasil' : 'Lanjut'}
                 </span>
               </button>
@@ -303,7 +303,7 @@ export function ArenaPage({
                   alt=""
                   className="w-full h-auto object-contain drop-shadow-[0_6px_12px_rgba(56,69,91,0.35)]"
                 />
-                <span className="absolute inset-0 flex items-center justify-center font-display text-white text-[8px] sm:text-[10px] md:text-xs tracking-wide uppercase drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] whitespace-nowrap">
+                <span className="absolute inset-0 flex items-center justify-center font-display text-white text-[8px] sm:text-[10px] md:text-xs tracking-wide drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)] whitespace-nowrap">
                   Kirim Analisis
                 </span>
               </button>
@@ -338,14 +338,14 @@ export function ArenaPage({
 
               <div className="flex items-center gap-2 border-b card-divider pb-1.5 sm:pb-2 mb-3 sm:mb-4 font-mono shrink-0">
                 <HelpCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FA6E00]" />
-                <h4 className="text-[10px] sm:text-xs font-bold card-title uppercase tracking-wider">
+                <h4 className="text-[10px] sm:text-xs font-bold card-title tracking-wider">
                   Petunjuk Penyelidikan
                 </h4>
               </div>
 
               <div className="mb-3 sm:mb-4 overflow-y-auto pr-1">
                 <div className="mb-3 shrink-0">
-                  <span className="text-[8px] sm:text-[9px] font-mono font-bold text-[#FA6E00] uppercase tracking-widest bg-[#FA6E00]/10 px-2 py-0.5 rounded border-2 border-[#FA6E00]">
+                  <span className="text-[8px] sm:text-[9px] font-mono font-bold text-[#FA6E00] tracking-widest bg-[#FA6E00]/10 px-2 py-0.5 rounded border-2 border-[#FA6E00]">
                     {activeCase.category}
                   </span>
                   <p className="text-[11px] sm:text-xs card-text mt-2 sm:mt-3 leading-relaxed text-justify">
@@ -354,7 +354,7 @@ export function ArenaPage({
                 </div>
 
                 <div className="card-inset rounded-xl p-2.5 sm:p-3.5">
-                  <span className="text-[8px] sm:text-[9px] font-mono font-bold text-[#FA6E00] uppercase tracking-wider block mb-1.5 sm:mb-2 border-b card-divider pb-1">
+                  <span className="text-[8px] sm:text-[9px] font-mono font-bold text-[#FA6E00] tracking-wider block mb-1.5 sm:mb-2 border-b card-divider pb-1">
                     Petunjuk Detail:
                   </span>
                   <ul className="flex flex-col gap-2 sm:gap-2.5">
@@ -403,12 +403,12 @@ export function ArenaPage({
                   </div>
                 )}
 
-                <h3 className={`text-xs sm:text-sm font-display uppercase tracking-widest mb-0.5 sm:mb-1 shrink-0 ${
+                <h3 className={`text-xs sm:text-sm font-display tracking-widest mb-0.5 sm:mb-1 shrink-0 ${
                   isCorrect ? 'text-[#FA6E00]' : 'text-[#38455B]'
                 }`}>
-                  {isCorrect ? 'ANALISIS BENAR!' : 'ANALISIS KELIRU!'}
+                  {isCorrect ? 'Analisis Benar!' : 'Analisis Keliru!'}
                 </h3>
-                <p className="text-[8px] sm:text-[9px] font-mono card-muted uppercase tracking-wider mb-2.5 sm:mb-4 shrink-0">
+                <p className="text-[8px] sm:text-[9px] font-mono card-muted tracking-wider mb-2.5 sm:mb-4 shrink-0">
                   Kasus ke-{currentCaseIndex + 1}
                 </p>
 

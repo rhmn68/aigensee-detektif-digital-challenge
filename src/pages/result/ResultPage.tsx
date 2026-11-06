@@ -51,7 +51,7 @@ export function ResultPage({ score, answers, onRestart, isMuted, onToggleAudio }
 
         <div id="result-accuracy-card" className="card-ui rounded-2xl px-4 py-2 sm:px-6 sm:py-4 w-full mb-3 sm:mb-5 flex items-center justify-center gap-3 sm:gap-4">
           <div className="text-center">
-            <span className="block text-[8px] sm:text-[9px] font-mono font-bold card-muted uppercase tracking-widest mb-0.5">
+            <span className="block text-[8px] sm:text-[9px] font-mono font-bold card-muted tracking-widest mb-0.5">
               Nilai Akurasi
             </span>
             <span className="block text-2xl sm:text-4xl font-black font-mono text-[#FA6E00] leading-none">
@@ -60,7 +60,7 @@ export function ResultPage({ score, answers, onRestart, isMuted, onToggleAudio }
           </div>
           <div className="w-px h-8 sm:h-12 bg-[#FA6E00]/25"></div>
           <div className="text-center">
-            <span className="block text-[8px] sm:text-[9px] font-mono font-bold card-muted uppercase tracking-widest mb-0.5">
+            <span className="block text-[8px] sm:text-[9px] font-mono font-bold card-muted tracking-widest mb-0.5">
               Benar
             </span>
             <span className="block text-lg sm:text-2xl font-black font-mono card-text leading-none">
@@ -104,7 +104,7 @@ export function ResultPage({ score, answers, onRestart, isMuted, onToggleAudio }
 
               <div className="flex items-center gap-2 border-b card-divider pb-2 mb-4 shrink-0">
                 <BookOpen className="w-4 h-4 text-[#FA6E00]" />
-                <h3 className="font-mono text-xs font-bold card-title uppercase tracking-wider">
+                <h3 className="font-mono text-xs font-bold card-title tracking-wider">
                   Lembar Detail Pemeriksaan Kasus
                 </h3>
               </div>
@@ -113,11 +113,11 @@ export function ResultPage({ score, answers, onRestart, isMuted, onToggleAudio }
                 <table className="w-full text-left font-mono text-[11px] sm:text-xs">
                   <thead>
                     <tr className="border-b card-divider card-muted pb-2">
-                      <th className="pb-2 font-bold uppercase tracking-wider w-12 text-center">Kasus</th>
-                      <th className="pb-2 font-bold uppercase tracking-wider">Topik/Kategori</th>
-                      <th className="pb-2 font-bold uppercase tracking-wider text-center w-24">Pilihan Anda</th>
-                      <th className="pb-2 font-bold uppercase tracking-wider text-center w-24">Hasil</th>
-                      <th className="pb-2 font-bold uppercase tracking-wider text-center w-20">Gambar AI</th>
+                      <th className="pb-2 font-bold tracking-wider w-12 text-center">Kasus</th>
+                      <th className="pb-2 font-bold tracking-wider">Topik/Kategori</th>
+                      <th className="pb-2 font-bold tracking-wider text-center w-24">Pilihan Anda</th>
+                      <th className="pb-2 font-bold tracking-wider text-center w-24">Hasil</th>
+                      <th className="pb-2 font-bold tracking-wider text-center w-20">Gambar AI</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-[#FA6E00]/15">

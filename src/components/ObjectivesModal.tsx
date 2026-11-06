@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HelpCircle, Fingerprint, ShieldCheck, ChevronLeft, ChevronRight, X, Sparkles } from 'lucide-react';
+import { HelpCircle, Fingerprint, ShieldCheck, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { playSynthesizerNote } from '../utils/audio';
 
 interface ObjectivesModalProps {
@@ -121,7 +121,7 @@ export function ObjectivesModal({ isOpen, onClose, onStart }: ObjectivesModalPro
             {slide.icon}
           </div>
           <div className="min-w-0 pr-6">
-            <h3 className="text-xs sm:text-base md:text-lg font-display text-[#FA6E00] uppercase tracking-wider truncate">
+            <h3 className="text-xs sm:text-base md:text-lg font-display text-[#FA6E00] tracking-wider truncate">
               {slide.title}
             </h3>
             <p className="text-[9px] sm:text-xs font-mono card-muted tracking-wide truncate">
@@ -138,7 +138,6 @@ export function ObjectivesModal({ isOpen, onClose, onStart }: ObjectivesModalPro
               className="card-inset rounded-xl sm:rounded-2xl p-2.5 sm:p-4 border border-[#FA6E00]/20 bg-white/60 shadow-xs flex flex-col gap-1 text-left"
             >
               <div className="flex items-center gap-1.5 font-bold text-[11px] sm:text-sm text-[#FA6E00]">
-                <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
                 <span>{item.keyword}</span>
               </div>
               <p className="text-[10px] sm:text-xs text-[#38455B] font-medium leading-relaxed text-justify">

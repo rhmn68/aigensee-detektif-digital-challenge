@@ -137,14 +137,14 @@ export function InteractiveGridBg() {
         ctx.fillStyle = 'rgba(56, 69, 91, 0.55)';
         ctx.font = 'bold 9px "Noto Sans", monospace';
         ctx.textAlign = 'left';
-        ctx.fillText(`SYS_LOC: [${Math.round(rx)}, ${Math.round(ry)}]`, rx + 86, ry - 14);
-        ctx.fillText('STATUS: TRACKING_ACTIVE', rx + 86, ry - 2);
-        ctx.fillText('FREQ: 5.8GHZ // CH: 12', rx + 86, ry + 10);
+        ctx.fillText(`Lokasi: [${Math.round(rx)}, ${Math.round(ry)}]`, rx + 86, ry - 14);
+        ctx.fillText('Status: Pelacakan Aktif', rx + 86, ry - 2);
+        ctx.fillText('Frekuensi: 5,8 GHz/Kanal: 12', rx + 86, ry + 10);
 
         ctx.fillStyle = 'rgba(250, 110, 0, 0.85)';
-        ctx.fillText(`SYS_LOC: [${Math.round(rx)}, ${Math.round(ry)}]`, rx + 85, ry - 15);
-        ctx.fillText('STATUS: TRACKING_ACTIVE', rx + 85, ry - 3);
-        ctx.fillText('FREQ: 5.8GHZ // CH: 12', rx + 85, ry + 9);
+        ctx.fillText(`Lokasi: [${Math.round(rx)}, ${Math.round(ry)}]`, rx + 85, ry - 15);
+        ctx.fillText('Status: Pelacakan Aktif', rx + 85, ry - 3);
+        ctx.fillText('Frekuensi: 5,8 GHz/Kanal: 12', rx + 85, ry + 9);
 
         ctx.strokeStyle = 'rgba(250, 110, 0, 0.4)';
         ctx.lineWidth = 0.85;
