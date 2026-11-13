@@ -21,12 +21,12 @@ export const digitalDetectiveAnswers: DigitalDetectiveAnswer[] = [
   {
     caseId: 1,
     title: 'Tanaman Hias di Pot Hitam',
-    category: 'Tulisan Tangan & Tekstur Permukaan',
+    category: 'Tulisan Tangan & Pencahayaan',
     liveUrl: 'https://glenrioariesto.github.io/detektif-digital-challenge/',
-    realImage: 'B',
-    aiImage: 'A',
-    locationOfArtifacts: 'Tulisan Pot, Tekstur Tanah & Kilap Daun',
-    explanation: 'Gambar A adalah hasil KA. Pot hitam tampak terlalu mulus sempurna tanpa tulisan penanda, kilap permukaan daun terlalu seragam, dan efek blur latar belakang tampak sintetis. Gambar B adalah foto asli tanaman hias Aglaonema dalam pot plastik hitam dengan tulisan cat putih "kel 8 IX".'
+    realImage: 'A',
+    aiImage: 'B',
+    locationOfArtifacts: 'Tulisan Pot, Tekstur Daun & Pencahayaan',
+    explanation: 'Gambar B adalah hasil KA dan Gambar A adalah foto asli, sesuai label sumber gambar. Foto asli memperlihatkan tulisan cat putih di pot bagian bawah dan pencahayaan lembut. Gambar hasil KA menampilkan dua pot tanpa tulisan, cahaya keemasan dari kanan atas, dan bokeh bulat yang menonjol. Kerusakan daun hadir pada kedua gambar dan bukan penentu tunggal keaslian.'
   },
   {
     caseId: 2,

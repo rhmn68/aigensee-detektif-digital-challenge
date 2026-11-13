@@ -178,6 +178,7 @@ export function ArenaPage({
             <MagnifiedImage
               id="magnified-image-a"
               src={activeCase.imageA}
+              fit={activeCase.imageFit}
               alt="Gambar Bukti A"
               label="A"
               isSelected={selectedAiChoice === 'A'}
@@ -188,6 +189,7 @@ export function ArenaPage({
             <MagnifiedImage
               id="magnified-image-b"
               src={activeCase.imageB}
+              fit={activeCase.imageFit}
               alt="Gambar Bukti B"
               label="B"
               isSelected={selectedAiChoice === 'B'}

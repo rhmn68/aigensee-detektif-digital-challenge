@@ -1,7 +1,7 @@
 import { Case } from '../types';
 
-import level1Ai from '../../assets/level-1-ai.webp';
-import level1Real from '../../assets/level-1-real.webp';
+import level1Ai from '../../assets/level-1-ai.jpeg';
+import level1Real from '../../assets/level-1-real.jpeg';
 import level2Ai from '../../assets/level-2-ai.webp';
 import level2Real from '../../assets/level-2-real.webp';
 import level3Ai from '../../assets/level-3-ai.webp';
@@ -25,19 +25,20 @@ export const CASES_DATA: Case[] = [
   {
     id: 1,
     title: "Tanaman Hias di Pot Hitam",
-    category: "Tulisan Tangan & Tekstur Permukaan",
-    description: "Foto objek sehari-hari hasil rekayasa AI sering menghilangkan detail penanda autentik seperti tulisan tangan di pot, serta membuat kilap daun dan butiran tanah tampak terlalu seragam. Cari gambar tanaman yang tampak terlalu mulus tanpa jejak penggunaan nyata.",
-    imageA: level1Ai,
-    imageB: level1Real,
-    realImage: "B",
-    aiImage: "A",
-    locationOfArtifacts: "Tulisan Pot, Tekstur Tanah & Kilap Daun",
+    category: "Tulisan Tangan & Pencahayaan",
+    description: "Bandingkan tulisan pada pot, tekstur daun, dan pencahayaan kedua gambar. Cari gambar dengan pot tanpa tulisan dan cahaya keemasan yang tampak sangat tertata. Ciri visual ini perlu diperiksa bersama, bukan dijadikan bukti tunggal hasil KA.",
+    imageA: level1Real,
+    imageB: level1Ai,
+    imageFit: "contain",
+    realImage: "A",
+    aiImage: "B",
+    locationOfArtifacts: "Tulisan Pot, Tekstur Daun & Pencahayaan",
     clues: [
-      "Periksa dinding pot plastik hitam pada kedua gambar. Apakah ada tulisan cat putih 'kel 8 IX' khas inventaris kelas di Gambar B yang tidak ditemukan pada pot polos Gambar A?",
-      "Perhatikan permukaan daun dan pencahayaan di Gambar A. Apakah kilap daunnya tampak terlalu licin dan merata seperti render digital?",
-      "Bandingkan tekstur tanah di dalam pot serta nat keramik lantai di Gambar B yang memiliki ketidaksempurnaan alami."
+      "Perhatikan bagian bawah Gambar A. Ada tulisan cat putih pada pot hitam. Bandingkan dengan pot pada Gambar B yang tidak memiliki tulisan tersebut.",
+      "Bandingkan pencahayaan kedua gambar. Gambar B menampilkan sinar keemasan dari kanan atas dan bokeh bulat yang menonjol, sedangkan Gambar A memiliki cahaya yang lebih lembut.",
+      "Periksa daun berlubang dan bercak cokelat pada kedua gambar. Kerusakan daun juga muncul pada Gambar B, jadi adanya cacat pada daun saja tidak cukup untuk menentukan foto asli."
     ],
-    explanation: "Gambar A adalah hasil KA. Pot hitam tampak terlalu mulus sempurna tanpa tulisan penanda, kilap permukaan daun terlalu seragam, dan efek blur latar belakang tampak sintetis. Gambar B adalah foto asli. Menampilkan tanaman hias Aglaonema dalam pot plastik hitam dengan tulisan cat putih 'kel 8 IX', tekstur tanah yang alami, serta ubin lantai nyata."
+    explanation: "Gambar B adalah hasil KA dan Gambar A adalah foto asli, sesuai label sumber gambar. Pada Gambar A terlihat tulisan cat putih di pot bagian bawah, tekstur daun yang bervariasi, serta latar tanaman yang buram. Gambar B menampilkan susunan dua pot yang lebih tertata, cahaya keemasan dari kanan atas, dan bokeh bulat yang menonjol; tulisan pada pot tidak tampak. Kerusakan daun hadir pada kedua gambar, sehingga ciri tersebut tidak dapat menjadi penentu tunggal keaslian foto."
   },
   {
     id: 2,

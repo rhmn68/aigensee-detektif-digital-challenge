@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 interface MagnifiedImageProps {
   id?: string;
   src: string;
+  fit?: 'cover' | 'contain';
   alt: string;
   label: 'A' | 'B';
   isSelected: boolean;
@@ -10,14 +11,15 @@ interface MagnifiedImageProps {
   disabled: boolean;
 }
 
-/** Hitung area gambar yang benar-benar tergambar saat object-fit: cover. */
-function getCoverLayout(
+/** Hitung area gambar yang benar-benar tergambar sesuai object-fit. */
+function getImageLayout(
   elW: number,
   elH: number,
   naturalW: number,
   naturalH: number,
+  fit: 'cover' | 'contain',
 ) {
-  const scale = Math.max(elW / naturalW, elH / naturalH);
+  const scale = (fit === 'contain' ? Math.min : Math.max)(elW / naturalW, elH / naturalH);
   const drawnW = naturalW * scale;
   const drawnH = naturalH * scale;
   const offsetX = (elW - drawnW) / 2;
@@ -28,6 +30,7 @@ function getCoverLayout(
 export function MagnifiedImage({
   id,
   src,
+  fit = 'cover',
   alt,
   label,
   isSelected,
@@ -84,14 +87,23 @@ export function MagnifiedImage({
     const zoom = 2.5;
     const lensRadius = 70;
 
-    // Sinkronkan dengan object-cover: lens memakai full asset yang di-scale sama,
+    // Sinkronkan dengan object-fit: lens memakai full asset yang di-scale sama,
     // lalu digeser sesuai crop/offset yang sama dengan <img>.
-    const { drawnW, drawnH, offsetX, offsetY } = getCoverLayout(
+    const { drawnW, drawnH, offsetX, offsetY } = getImageLayout(
       imageRect.width,
       imageRect.height,
       naturalWidth,
       naturalHeight,
+      fit,
     );
+
+    if (fit === 'contain' && (
+      xImage < offsetX || xImage > offsetX + drawnW ||
+      yImage < offsetY || yImage > offsetY + drawnH
+    )) {
+      setLensState(prev => ({ ...prev, show: false }));
+      return;
+    }
 
     const drawnX = xImage - offsetX;
     const drawnY = yImage - offsetY;
@@ -152,7 +164,7 @@ export function MagnifiedImage({
         ref={imgRef}
         src={src}
         alt={alt}
-        className="w-full h-full object-cover object-center transition-opacity duration-300"
+        className={`w-full h-full ${fit === 'contain' ? 'object-contain' : 'object-cover'} object-center transition-opacity duration-300`}
         onLoad={() => setImgLoaded(true)}
         style={{ opacity: imgLoaded ? 1 : 0 }}
       />
