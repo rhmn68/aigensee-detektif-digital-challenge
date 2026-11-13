@@ -4,6 +4,7 @@ interface MagnifiedImageProps {
   id?: string;
   src: string;
   fit?: 'cover' | 'contain';
+  position?: 'center' | 'bottom';
   alt: string;
   label: 'A' | 'B';
   isSelected: boolean;
@@ -18,12 +19,13 @@ function getImageLayout(
   naturalW: number,
   naturalH: number,
   fit: 'cover' | 'contain',
+  position: 'center' | 'bottom',
 ) {
   const scale = (fit === 'contain' ? Math.min : Math.max)(elW / naturalW, elH / naturalH);
   const drawnW = naturalW * scale;
   const drawnH = naturalH * scale;
   const offsetX = (elW - drawnW) / 2;
-  const offsetY = (elH - drawnH) / 2;
+  const offsetY = (elH - drawnH) * (position === 'bottom' ? 1 : 0.5);
   return { drawnW, drawnH, offsetX, offsetY };
 }
 
@@ -31,6 +33,7 @@ export function MagnifiedImage({
   id,
   src,
   fit = 'cover',
+  position = 'center',
   alt,
   label,
   isSelected,
@@ -95,6 +98,7 @@ export function MagnifiedImage({
       naturalWidth,
       naturalHeight,
       fit,
+      position,
     );
 
     if (fit === 'contain' && (
@@ -164,7 +168,7 @@ export function MagnifiedImage({
         ref={imgRef}
         src={src}
         alt={alt}
-        className={`w-full h-full ${fit === 'contain' ? 'object-contain' : 'object-cover'} object-center transition-opacity duration-300`}
+        className={`w-full h-full ${fit === 'contain' ? 'object-contain' : 'object-cover'} ${position === 'bottom' ? 'object-bottom' : 'object-center'} transition-opacity duration-300`}
         onLoad={() => setImgLoaded(true)}
         style={{ opacity: imgLoaded ? 1 : 0 }}
       />

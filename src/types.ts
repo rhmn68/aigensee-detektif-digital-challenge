@@ -6,6 +6,7 @@ export interface Case {
   imageA: string;
   imageB: string;
   imageFit?: 'cover' | 'contain';
+  imagePosition?: 'center' | 'bottom';
   realImage: 'A' | 'B'; // Which image is the actual human photo
   aiImage: 'A' | 'B';   // Which image is AI generated (the correct answer to select)
   locationOfArtifacts: string; // The area where AI artifacts are found (e.g. "Kerutan & Telinga", "Jari Tangan")
